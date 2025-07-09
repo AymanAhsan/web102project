@@ -104,7 +104,7 @@ function App() {
 
   const unbanAttribute = (attributeToRemove) => {
     setBannedAttributes(prevBanned => 
-      prevBanned.filter((index) => 
+      prevBanned.filter((attributes, index) => 
         index !== prevBanned.indexOf(attributeToRemove)
       )
     );
